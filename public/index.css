@@ -85,25 +85,17 @@ li {
 
     .buttons {
         display: grid;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        height: 20rem;
-        width: 20rem;
-        border: 6px solid black;
-        border-radius: 50%;
-        grid-template-areas:
-        ". up ."
-        "left . right"
-        ". down .";
+        margin-bottom: 4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
         align-items: center;
         padding: 1rem;
-        background-color: rgba(30, 30, 30, 0.5);
     }
 
     button {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 15vw;
+        height: 15vw;
         border-radius: 50%;
         outline: none;
         border: 3px solid rgba(200, 200, 200, 0.6);
@@ -115,14 +107,18 @@ li {
 }
 
 #left {
-    grid-area: left;
+    grid-area: 2 / 1 / 3 / 3;
+    margin-right: 4rem;
 }
 #right {
-    grid-area: right;
+    grid-area: 2 / 2 / 3 / 4;
+    margin-left: 4rem;
 }
 #up {
-    grid-area: up;
+    grid-area: 1 / 2 / 3 / 3;
+    margin-bottom: 4rem;
 }
 #down {
-    grid-area: down;
+    grid-area: 2 / 2 / 4 / 3;
+    margin-top: 4rem;
 }
