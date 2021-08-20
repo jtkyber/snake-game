@@ -84,3 +84,21 @@ document.addEventListener('keydown', e => {
         changeDirection('down');
     }
 })
+
+document.addEventListener('click', e => {
+    if ((e.target.id === 'left') && !snakeHead.classList.contains('left')) {
+        changeDirection('left');
+    }
+
+    if ((e.target.id === 'right') && !snakeHead.classList.contains('right')) {
+        changeDirection('right');
+    }
+
+    if ((e.target.id === 'up') && !snakeHead.classList.contains('up')) {
+        changeDirection('up');
+    }
+
+    if ((e.target.id === 'down') && !snakeHead.classList.contains('down')) {
+        changeDirection('down');
+    }
+})
