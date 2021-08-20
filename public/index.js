@@ -85,7 +85,7 @@ document.addEventListener('keydown', e => {
     }
 })
 
-document.addEventListener('click', e => {
+document.addEventListener('touchstart', e => {
     if ((e.target.id === 'left') && !snakeHead.classList.contains('left')) {
         changeDirection('left');
     }
@@ -102,3 +102,4 @@ document.addEventListener('click', e => {
         changeDirection('down');
     }
 })
+
