@@ -68,23 +68,19 @@ const main = (currentTime) => {
 window.requestAnimationFrame(main);
 
 document.addEventListener('keydown', e => {
-    if ((e.keyCode === 37) && !snakeHead.classList.contains('left')) {
+    if ((e.keyCode === 37 || e.keyCode === 65) && !snakeHead.classList.contains('left')) {
         changeDirection('left');
     }
 
-    if ((e.keyCode === 39) && !snakeHead.classList.contains('right')) {
+    if ((e.keyCode === 39 || e.keyCode === 68) && !snakeHead.classList.contains('right')) {
         changeDirection('right');
     }
 
-    if ((e.keyCode === 38) && !snakeHead.classList.contains('up')) {
+    if ((e.keyCode === 38 || e.keyCode === 87) && !snakeHead.classList.contains('up')) {
         changeDirection('up');
     }
 
-    if ((e.keyCode === 40) && !snakeHead.classList.contains('down')) {
+    if ((e.keyCode === 40 || e.keyCode === 83) && !snakeHead.classList.contains('down')) {
         changeDirection('down');
-    }
-
-    if (e.keyCode === 32) {
-        setGameOver();
     }
 })
