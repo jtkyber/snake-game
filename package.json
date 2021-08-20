@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d public"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "node-modules": "^1.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
