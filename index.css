@@ -98,27 +98,27 @@ li {
         height: 15vw;
         border-radius: 50%;
         outline: none;
-        border: 3px solid rgba(200, 200, 200, 0.6);
+        border: 3px solid rgba(0, 0, 0, 0.5);
         font-size: 1.5rem;
         font-weight: 600;
-        background-color: rgba(100, 0, 0, 0.7);
+        background-color: rgba(75, 0, 0, 0.8);
         color: rgb(200, 200, 200);
     }
 }
 
 #left {
     grid-area: 2 / 1 / 3 / 3;
-    margin-right: 4rem;
+    margin-right: 4.5rem;
 }
 #right {
     grid-area: 2 / 2 / 3 / 4;
-    margin-left: 4rem;
+    margin-left: 4.5rem;
 }
 #up {
     grid-area: 1 / 2 / 3 / 3;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
 }
 #down {
     grid-area: 2 / 2 / 4 / 3;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
 }
