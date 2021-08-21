@@ -7,7 +7,7 @@ export let gameOver = false;
 export const setGameOver = () => {
     gameOver = !gameOver;
 }
-const moveSpeed = 4;
+const moveSpeed = 6;
 
 export const changeDirection = (dir) => {
     for (let part of body) {
